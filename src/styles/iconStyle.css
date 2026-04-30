@@ -1,0 +1,67 @@
+.icon {
+    width: var(--svg-width);
+    height: var(--svg-height);
+
+    background-color: var(--text-secondary); 
+
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+.top .icon {
+    -webkit-mask-image: url('../icons/menu.svg');
+    mask-image: url('../icons/menu.svg');
+}
+
+.search .icon {
+    -webkit-mask-image: url('../icons/magnify.svg');
+    mask-image: url('../icons/magnify.svg');
+}
+
+.tasks div:nth-child(1) .icon {
+    -webkit-mask-image: url('../icons/chevron-double-right.svg');
+    mask-image: url('../icons/chevron-double-right.svg');
+}
+
+.tasks div:nth-child(2) .icon {
+    -webkit-mask-image: url('../icons/list-status.svg');
+    mask-image: url('../icons/list-status.svg');
+}
+
+.tasks div:nth-child(3) .icon {
+    -webkit-mask-image: url('../icons/calendar-month.svg');
+    mask-image: url('../icons/calendar-month.svg');
+}
+
+.lists div .icon {
+    -webkit-mask-image: url('../icons/square-rounded.svg');
+    mask-image: url('../icons/square-rounded.svg');
+}
+
+.lists div:nth-child(1) .icon { background-color: var(--accent-red); }    
+.lists div:nth-child(2) .icon { background-color: var(--accent-cyan); }   
+.lists div:nth-child(3) .icon { background-color: var(--accent-yellow); }
+
+.lists button .icon {
+    -webkit-mask-image: url('../icons/plus.svg');
+    mask-image: url('../icons/plus.svg');
+}
+
+.tags button .icon {
+    -webkit-mask-image: url('../icons/plus.svg');
+    mask-image: url('../icons/plus.svg');
+}
+
+.settings .icon {
+    -webkit-mask-image: url('../icons/tune.svg');
+    mask-image: url('../icons/tune.svg');
+}
+
+.sign-out .icon {
+    -webkit-mask-image: url('../icons/logout.svg');
+    mask-image: url('../icons/logout.svg');
+}

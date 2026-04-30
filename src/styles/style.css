@@ -7,13 +7,14 @@
 
 :root {
     --svg-width: 1.4rem;
-    --svg-height: 1.4rem;--bg-outer: #C6D0C5;
+    --svg-height: 1.4rem;
+    --bg-outer: #C6D0C5;
     --bg-menu: #F4F5F6;        
     --bg-main: #FFFFFF;        
     --bg-element: #EAECEE;     
     --text-primary: #1C1C1E;   
     --text-secondary: #71717A; 
-    --accent-yellow: #FFD233;  
+    --accent-yellow: #FFD233;
     --accent-blue: #2584FF;    
     --accent-red: #FF6B6B;     
     --accent-cyan: #56C1FF;    
@@ -36,16 +37,4 @@ body {
     grid-template-columns: 1fr 3fr 2fr;
     padding: var(--body-pad);
     height: 100%;
-}
-
-img {
-    height: var(--svg-height);
-    width: var(--svg-width);
-}
-
-.menu {
-    border: 2px solid red;
-    grid-column: 1/2;
-    border-radius: var(--corners);
-    padding: var(--menu-pad);
 }
