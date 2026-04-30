@@ -7,7 +7,17 @@
 
 :root {
     --svg-width: 1.4rem;
-    --svg-height: 1.4rem;
+    --svg-height: 1.4rem;--bg-outer: #C6D0C5;
+    --bg-menu: #F4F5F6;        
+    --bg-main: #FFFFFF;        
+    --bg-element: #EAECEE;     
+    --text-primary: #1C1C1E;   
+    --text-secondary: #71717A; 
+    --accent-yellow: #FFD233;  
+    --accent-blue: #2584FF;    
+    --accent-red: #FF6B6B;     
+    --accent-cyan: #56C1FF;    
+    --border-color: #E4E4E7;
 }
 
 * {
