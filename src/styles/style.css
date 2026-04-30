@@ -5,7 +5,17 @@
         url("../fonts/Cause-VariableFont_wght.woff") format("woff");
 }
 
+:root {
+    --svg-width: 1.4rem;
+    --svg-height: 1.4rem;
+}
+
 * {
     font-family: cause, Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
             Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+    height: var(--svg-height);
+    width: var(--svg-width);
 }
