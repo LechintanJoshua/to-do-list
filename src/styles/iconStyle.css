@@ -42,9 +42,9 @@
     mask-image: url('../icons/square-rounded.svg');
 }
 
-.lists div:nth-child(1) .icon { background-color: var(--accent-red); }    
-.lists div:nth-child(2) .icon { background-color: var(--accent-cyan); }   
-.lists div:nth-child(3) .icon { background-color: var(--accent-yellow); }
+.list-type > div:nth-child(1) .icon { background-color: var(--accent-red); }    
+.list-type > div:nth-child(2) .icon { background-color: var(--accent-cyan); }   
+.list-type > div:nth-child(3) .icon { background-color: var(--accent-yellow); }
 
 .lists button .icon {
     -webkit-mask-image: url('../icons/plus.svg');
@@ -70,4 +70,10 @@
     position: absolute;
    top: 50%;
    transform: translateY(-50%);
+}
+
+.top .icon:hover {
+    transition: 0.1s;
+    cursor: pointer;
+    background-color: var(--text-primary);
 }
