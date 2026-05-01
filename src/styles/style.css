@@ -21,7 +21,8 @@
     --border-color: #E4E4E7;
     --body-pad: 2rem;
     --menu-pad: 1rem;
-    --corners: 12px;
+    --corners-12: 12px;
+    --corners-6: 6px;
 }
 
 * {
