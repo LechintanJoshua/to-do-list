@@ -3,4 +3,19 @@
     border-radius: var(--corners);
     padding: var(--menu-pad);
     background-color: var(--bg-menu);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-self: start;
+    position: fixed;
+}
+
+.menu .top,
+.menu .search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search input {
+    padding-left: 20px;
 }

@@ -65,3 +65,7 @@
     -webkit-mask-image: url('../icons/logout.svg');
     mask-image: url('../icons/logout.svg');
 }
+
+.search .icon {
+    position: absolute;
+}
