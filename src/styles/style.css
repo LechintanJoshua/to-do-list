@@ -11,7 +11,7 @@
     --bg-outer: #C6D0C5;
     --bg-menu: #F4F5F6;        
     --bg-main: #FFFFFF;        
-    --bg-element: #EAECEE;     
+    --bg-element: #dbdde0;     
     --text-primary: #1C1C1E;   
     --text-secondary: #71717A; 
     --accent-yellow: #FFD233;
@@ -34,7 +34,7 @@
 body {
     background-color: var(--bg-main);
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-columns: 3fr 5fr 4fr;
     padding: var(--body-pad);
     min-height: 100dvh;
 }
