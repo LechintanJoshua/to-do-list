@@ -18,7 +18,7 @@
                 <div class="icon">
                 </div>
             </label>
-            <input type="text" name="search" id="search", placeholder="Search", minlength="3">
+            <input type="text" name="search" id="search" placeholder="Search" minlength="3">
         </div>
 
         <div class="tasks">
@@ -102,6 +102,61 @@
     </div>
     
     <div class="task-list"></div>
-    <div class="task-cr"></div>
+    <div class="task-cr">
+        <div class="top">
+            <p>Task</p>
+        </div>
+
+        <div class="details">
+            <input type="text" name="task-title" id="task-title" placeholder="Task name here">
+            <textarea name="description" id="description" placeholder="Description" rows="5" cols="50"></textarea>
+        </div>
+
+        <div class="miscellaneous">
+            <div class="meta-row">
+                <p>List</p>
+                <select name="list-fam" id="list-fam">
+                    <option value="">--Please choose an option--</option>
+                    <option value="personal">Personal</option>
+                    <option value="work">Work</option>
+                </select>
+            </div>
+            
+            <div class="meta-row">
+                <p>Due date</p>
+                <input type="date" name="due-date" id="due-date">
+            </div>
+            
+            <div class="meta-row">
+                <p>Tags</p>
+                <div class="but-opt">
+                    <button class="tag-badge">Tag 1</button>
+                    <button class="add-tag-btn">+ Add Tag</button>
+                </div>
+            </div>
+
+            <div class="subtask">
+                <p class="title">Subtasks:</p>
+
+                <button class="add-sub">
+                    <div class="icon"></div>
+                    Add New Subtask
+                </button>
+
+                <div class="sub-container">
+                    <label class="subtask-item">
+                        <input type="checkbox" name="sub1" id="sub1">
+                        <span>Research content ideas</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="confirm-btns">
+            <button class="btn-delete">Delete Task</button>
+            <button class="btn-save">Save changes</button>
+        </div>
+    </div>
+    </div>
 </body>
 </html>

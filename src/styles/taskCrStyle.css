@@ -1,0 +1,15 @@
+.task-cr {
+    grid-column: 3/4;
+    height: calc(100dvh - (var(--body-pad) * 2));
+    overflow-y: auto
+}
+
+.task-cr .top {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.confirm-btns {
+    margin-top: auto;
+}
