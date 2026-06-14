@@ -79,7 +79,6 @@ export default class MenuGenerator {
     #createTasks() {
         const div = document.createElement('div');
         const taskList = document.createElement('div');
-        
         div.textContent = 'Tasks';
         taskList.classList.add('task-list');
 
@@ -91,49 +90,17 @@ export default class MenuGenerator {
         return div;
     }
 
-    #createType(name, value) {
-        const div = document.createElement('div');
-        const dIcon = document.createElement('div');
-        const dNumber = document.createElement('div');
-
-        dIcon.classList.add('icon');
-        div.appendChild(dIcon);
-        div.textContent = name;
-        dNumber.textContent = value;
-        div.appendChild(dNumber);
-
-        return div;
-    }
-
-    #createTypeButton() {
-        const button = document.createElement('button');
-        const dIcon = document.createElement('div');
-
-        dIcon.classList.add('icon');
-        button.textContent = 'Add new list'
-        button.appendChild(dIcon);
-
-        return button
-    }
-
     // TO DO
     // asemenea asupra, sa preiei din local storage numarul exact
     // nu cel hardcodat
     #createLists() {
         const div = document.createElement('div');
         const dList = document.createElement('div');
-        
-        dList.classList.add('list-type')
+        dList.classList.add(list)
         div.classList.add('lists');
         div.textContent = 'Lists';
-        
-        dList.appendChild(this.#createType("Personal", 1));
-        dList.appendChild(this.#createType('Work', 4));
-        dList.appendChild(this.#createType('List', 5));
-        dList.appendChild(this.#createTypeButton());
-        div.appendChild(dList);
 
-        return div;
+
     }
 
     createSidePanel() {
