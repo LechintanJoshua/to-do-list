@@ -1,7 +1,7 @@
 .task-cr {
     grid-column: 3/4;
     height: calc(100dvh - (var(--body-pad) * 2));
-    overflow-y: auto
+    overflow-y: auto;
 }
 
 .task-cr .top {
@@ -10,6 +10,191 @@
     margin-bottom: 2rem;
 }
 
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#task-title {
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    outline: none;
+    padding: 0.6rem;
+}
+
+#description {
+    background-color: var(--bg-main);
+    border: none;
+    border-radius: var(--corners-12);
+    padding: 1rem;
+    resize: none;
+    outline: none;
+    font-family: inherit;
+}
+
+.miscellaneous {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.meta-row {
+    display: flex;
+    align-items: center; 
+}
+
+.meta-row > p {
+    width: 120px;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.meta-row select,
+.meta-row input[type="date"] {
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--corners-6);
+    border: 0.5px solid var(--border-color);
+    background-color: var(--bg-main);
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.but-opt {
+    display: flex;
+    gap: 14px;
+}
+
+.but-opt div {
+    border-radius: var(--corners-6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    padding: 2px 10px;
+    background-color: var(--bg-element);
+    border: 0.5px dotted var(--text-secondary);
+}
+
+.but-opt button {
+    background-color: transparent;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 2px 10px;
+    font-family: inherit;
+}
+
+.but-opt > *:hover {
+    transition: 0.1s;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--bg-outer);
+    border-radius: var(--corners-6);
+    font-weight: bold;
+}
+
+.add-sub {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 0.2px dotted var(--text-secondary);
+    border-radius: var(--corners-6);
+    width: 100%;
+    padding: 6px 0;
+    font-weight: bold;
+    color: var(--text-secondary);
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.subtask-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+.subtask-item span {
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.subtask-item input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 1.5px solid var(--border-color);
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtask-item input[type="checkbox"]:checked {
+    background-color: var(--text-secondary);
+    border-color: var(--text-secondary);
+}
+
+.subtask-item input[type="checkbox"]:checked::after {
+    content: '✓';
+    color: var(--bg-main);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.subtask .title {
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin: 2rem 0 1rem 0;
+    color: var(--text-primary);
+}
+
 .confirm-btns {
     margin-top: auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.confirm-btns button {
+    padding: 0.8rem 1.5rem;
+    border-radius: var(--corners-6);
+    border: 1px solid var(--border-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-delete {
+    background-color: transparent;
+    color: var(--text-secondary);
+}
+
+.btn-save {
+    background-color: var(--accent-yellow);
+    color: var(--text-primary);
+}
+
+.btn-delete:hover {
+    background-color: var(--border-color);
+    color: var(--text-primary);
+    transition: 0.1s;
+}
+
+.btn-save:hover {
+    background-color: var(--accent-darker-yellow);
+    transition: 0.1s;
 }

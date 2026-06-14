@@ -68,8 +68,13 @@
 
 .search .icon {
     position: absolute;
-   top: 50%;
-   transform: translateY(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.add-sub .icon {
+    -webkit-mask-image: url('../icons/plus.svg');
+    mask-image: url('../icons/plus.svg');
 }
 
 .top .icon:hover {
