@@ -44,7 +44,7 @@
 
 .meta-row {
     display: flex;
-    align-items: center; 
+    align-items: flex-start; 
 }
 
 .meta-row > p {
@@ -65,6 +65,7 @@
 
 .but-opt {
     display: flex;
+    flex-wrap: wrap;
     gap: 14px;
 }
 
@@ -111,8 +112,14 @@
     padding: 6px 0;
     font-weight: bold;
     color: var(--text-secondary);
-    cursor: pointer;
     margin-bottom: 1rem;
+}
+
+.add-sub:hover {
+    background-color: var(--bg-outer);
+    transition: 0.2s;
+    color: var(--text-primary);
+    cursor: pointer;
 }
 
 .subtask-item {
