@@ -33,7 +33,7 @@ export default class TaskDetailController {
         this.#delBtn.addEventListener('click', () => this.#removeTask());
     }
 
-    #takesubInfo () {
+   #takeSubInfo() {
 
     }
 
@@ -43,5 +43,13 @@ export default class TaskDetailController {
 
     #checkTagClick(e) {
 
+    }
+
+    #upsertTask() {
+
+    }
+
+    #removeTask() {
+        
     }
 }
