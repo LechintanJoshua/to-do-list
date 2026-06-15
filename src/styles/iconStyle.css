@@ -42,9 +42,9 @@
     mask-image: url('../icons/square-rounded.svg');
 }
 
-.list-type > div:nth-child(1) .icon { background-color: var(--accent-red); }    
-.list-type > div:nth-child(2) .icon { background-color: var(--accent-cyan); }   
-.list-type > div:nth-child(3) .icon { background-color: var(--accent-yellow); }
+.list-type .list-red .icon { background-color: var(--accent-red); }    
+.list-type.list-blue .icon { background-color: var(--accent-cyan); }   
+.list-type.list-yellow .icon { background-color: var(--accent-yellow); }
 
 .lists button .icon {
     -webkit-mask-image: url('../icons/plus.svg');
