@@ -2,9 +2,9 @@ export default class Subtask {
     #name;
     #completed;
 
-    constructor(name, completed) {
+    constructor(name) {
         this.#name = name;
-        this.#completed = completed;
+        this.#completed = false;
     }
 
     changeName (newName) {

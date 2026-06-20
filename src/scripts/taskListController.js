@@ -1,10 +1,14 @@
+import TaskModel from "./taskModel.js";
+
 export default class TaskListController {
     #headNum;
     #addTask;
     #container;
  
-    constructor() {
+    constructor(taskArr) {
         this.#initListeners();
+        this.#renderNum(taskArr.length);
+        this.#renderTasks(taskArr);
     }
 
     #initListeners() {
@@ -12,11 +16,22 @@ export default class TaskListController {
         this.#addTask = document.querySelector('.add-new-task');
         this.#container = document.querySelector('.tasks-container');
 
-        // vezi pe viitor de aceasta functie sa o definesti 
-        // undeva si sa o exportezi
-        this.#headNum.textContent = getNrTaskStorage();
         this.#container.addEventListener('click', (e) => this.#checkClicks(e));
     }
+
+    #renderNum (taskNo) {
+        this.#headNum.textContent = taskNo;
+    }
+
+    #renderTasks (taskArr) {
+        for (const task of taskArr) {
+            this.#addTask(task);
+        }
+    }
+
+    // #addTask (task) {
+
+    // }
 
     #checkClicks(e) {
 

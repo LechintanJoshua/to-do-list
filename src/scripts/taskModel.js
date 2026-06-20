@@ -19,10 +19,11 @@ export default class TaskModel {
 
         if (this.#items === null) {
             this.#items = new Array();
-            // aici poti hardcoda si task-urile initiale cand se incarca prima data site-ul
+            this.#addPredefinedTasks();
+            this.#saveModifiedData();
+        } else {
+            this.#items = this.#items.map(Task.fromJSON);        
         }
-
-        this.#items = this.#items.map(Task.fromJSON);
     }
 
     getTask (id) {
@@ -86,5 +87,30 @@ export default class TaskModel {
         }
 
         this.#saveModifiedData();
+    }
+
+    // fi atent sa nu uiti sa modifici datele hardcodate
+    #addPredefinedTasks () {
+        // modifica acest task cand descarci plugin-ul ok de webpack pentru date
+        // ca data data ca parametru sa fie peste 3 zile 
+        const researchTask = new Task('Research Content Ideas', '', '', '30-06-2026');
+        const driverTask = new Task("Renew Driver's License", '', 'Personal', '12-07-2026');
+        const consultTask = new Task("Consult Accountant", '', 'List', '');
+        const printTask = new Task('Print Business Card', '', '', '');
+        
+        driverTask.addSubtask(new Subtask('Retake Exam'));
+        // aici adauga-mi tu 2 descrieri rapide penmtru aceste subtask-uri
+        printTask.addSubtask(new Subtask('Check design and color format'));
+        printTask.addSubtask(new Subtask('Find local typography'));
+        printTask.addSubtask(new Subtask('Approve print sample'));
+
+        this.#items.push(researchTask);
+        this.#items.push(driverTask);
+        this.#items.push(consultTask);
+        this.#items.push(printTask);
+    }
+
+    static getNrTaskStorage () {
+        return
     }
 }
