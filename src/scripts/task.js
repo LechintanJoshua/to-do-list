@@ -48,6 +48,10 @@ export default class Task {
     getName () {
         return this.#name;
     }
+    
+    getId() {
+        return this.#id;
+    }
 
     getDescription () {
         return this.#description;
@@ -69,8 +73,28 @@ export default class Task {
         this.#tags.push(tag);
     }
 
-    addSubtask(subtask) {
+    removeTag (tag) {
+        const index = this.#tags.indexOf(tag);
+
+        if (index == -1) {
+            return;
+        }
+        
+        this.#tags.splice(index, 1);
+    }
+
+    addSubtask (subtask) {
         this.#subtasks.push(subtask);
+    }
+
+    removeSubtask (subtask) {
+        const index = this.#subtasks.indexOf(tag);
+
+        if (index == -1) {
+            return;
+        }
+
+        this.#subtasks.splice(index, 1);
     }
 
     containsTag(tag) {
