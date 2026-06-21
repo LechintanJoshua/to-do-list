@@ -30,6 +30,10 @@ export default class TaskModel {
         return this.#items.find((task) => task.getId() === id);
     }
 
+    getItems () {
+        return this.#items;
+    }
+
     #saveModifiedData () {
         localStorage.setItem(this.#key, JSON.stringify(this.#items));
     }

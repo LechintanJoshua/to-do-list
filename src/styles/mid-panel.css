@@ -61,6 +61,12 @@
     gap: 0.8rem;
 }
 
+.task-item .desc {
+    color: var(--text-secondary);
+    padding: 0.8rem;
+    font-weight: 600;
+    font-size: 0.7rem;
+}
 
 .task-item:last-child {
     border-bottom: none;
@@ -155,4 +161,4 @@
 
 .list-red { background-color: var(--accent-red); }
 .list-yellow { background-color: var(--accent-yellow); }
-.list-blue {background-color: var(--accent-blue);}
+.list-blue {background-color: var(--accent-blue); }

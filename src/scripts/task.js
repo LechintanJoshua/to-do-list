@@ -65,6 +65,10 @@ export default class Task {
         return this.#dueDate;
     }
 
+    getSubtaskNo () {
+        return this.#subtasks.length;
+    }
+
     getStatus () {
         return this.#completed;
     }

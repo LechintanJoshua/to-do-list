@@ -98,8 +98,8 @@
     
     <div class="task-list">
         <div class="header-title">
-            <h1 class="actual-date">Today</h1>
-            <div class="header-number">5</div>
+            <h1 class="actual-date"></h1>
+            <div class="header-number"></div>
         </div>
 
         <button class="add-new-task">
@@ -108,72 +108,6 @@
         </button>
 
         <div class="tasks-container">
-            <div class="task-item">
-                <div class="task-main">
-                    <label class="custom-checkbox">
-                        <input type="checkbox">
-                        <span>Research content ideas</span>
-                    </label>
-                    <div class="icon chevron-icon"></div>
-                </div>
-            </div>
-
-            <div class="task-item">
-                <div class="task-main">
-                    <label class="custom-checkbox">
-                        <input type="checkbox">
-                        <span>Renew driver's license</span>
-                    </label>
-                    <div class="icon chevron-icon"></div>
-                </div>
-
-                <div class="task-meta">
-                    <div class="meta-badge">
-                        <div class="icon calendar-icon"></div>
-                        22-03-22
-                    </div>
-                    <div class="meta-badge">
-                        <div class="badge-number">1</div>
-                        Subtasks
-                    </div>
-                    <div class="meta-badge">
-                        <div class="list-color list-red"></div>
-                        Personal
-                    </div>
-                </div>                
-            </div>
-                
-            <div class="task-item">
-                <div class="task-main">
-                    <label class="custom-checkbox">
-                        <input type="checkbox">
-                        <span>Consult accountant</span>
-                    </label>
-                    <div class="icon chevron-icon"></div>
-                </div>
-                
-                <div class="task-meta">
-                    <div class="meta-badge">
-                        <div class="list-color list-yellow"></div>
-                        List
-                    </div>
-                    <div class="meta-badge">
-                        <div class="badge-number">3</div>
-                        Subtasks
-                    </div>
-                </div>
-            </div>
-
-            <div class="task-item">
-                <div class="task-main">
-                    <label class="custom-checkbox">
-                        <input type="checkbox">
-                        <span>Print business card</span>
-                    </label>
-
-                    <div class="icon chevron-icon"></div>
-                </div>
-            </div>
         </div>
     </div>  
 
@@ -183,7 +117,7 @@
         </div>
 
         <div class="details">
-            <input type="text" name="task-title" id="task-title" placeholder="Task name here">
+            <input type="text" name="task-title" id="task-title" placeholder="Task name here*" minlength="3">
             <textarea name="description" id="description" placeholder="Description" rows="5" cols="50"></textarea>
         </div>
 
