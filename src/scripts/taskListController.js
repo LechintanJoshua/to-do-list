@@ -1,6 +1,12 @@
 import TaskModel from "./taskModel.js";
 import { rngColorClass } from './adder.js';
 
+export const TaskEventType = {
+    INPUT: 'input',
+    CHEVRON: 'div.chevron-icon',
+    SUBTASKS: 'div.meta-badge subtasks',
+}
+
 export default class TaskListController {
     #headNum;
     #actDate;
@@ -48,7 +54,7 @@ export default class TaskListController {
 
         if (task.getDescription() !== '') {
             const p = document.createElement('p');
-            
+            u
             p.classList.add('desc');
             p.textContent = task.getDescription();
 
@@ -117,7 +123,7 @@ export default class TaskListController {
         const badge = document.createElement('div');
         const number = document.createElement('div');
 
-        badge.classList.add('meta-badge');
+        badge.classList.add('meta-badge', 'subtasks');
         number.classList.add('badge-number');
         number.textContent = task.getSubtaskNo();
         badge.append(number, 'Subtasks');
@@ -137,6 +143,22 @@ export default class TaskListController {
     }
 
     #checkClicks(e) {
+        const eventType = Object.values(TaskEventType).find((val) => e.target.closest(val));
 
+        if (!eventType) {
+            return;
+        }
+
+        const clickedEl = e.target.closest(eventType);
+        const taskId = e.target.closest('.task-item').dataset.id;
+
+        switch (eventType) {
+            case TaskEventType.INPUT:
+
+            case TaskEventType.CHEVRON:
+
+            case TaskEventType.SUBTASKS:
+
+        }
     }
 }

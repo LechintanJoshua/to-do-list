@@ -1,13 +1,13 @@
 import Task from "./task.js";
 import Subtask from "./subtask.js";
 
-export const TaskType = {
+export const TaskType = Object.freeze({
     NAME: 'name',
     DESC: 'description',
     COMPL: 'completion',
     LIST: 'list',
     DATA: 'data',
-};
+});
 
 export default class TaskModel {
     #key;
